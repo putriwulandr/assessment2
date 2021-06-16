@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Detail</title>
+    <link rel="icon" href="assesstment2/../assets/img/icon-3.png" type="image/png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.9/sweetalert2.min.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-11">
+                <div class="editbook">
+                    <div class="container">
+                        <!-- Button to Open the Modal -->
+                        <div type="button" class="btn btn-primary1" data-toggle="modal" data-target="#myModal">
+                            Edit
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-1">
+                <div class="deletebook">
+                    <div class="container">
+                        <!-- Button to Open the Modal -->
+                        <div type="button" class="btn btn-primary2" id="delete">
+                            Delete
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                <div class="imagess"></div>
+            </div>
+            <div class="col-md-3">
+                <div class="cover-full">
+                    <img src="assesstment2/../assets/img/cover2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10"></div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-10">
+                <div class="category">Novel</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-7">
+                <div class="title">DILAN 1990</div>
+            </div>
+            <div class="col-md-3">
+                <div class="availability">
+                    Available
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="date">
+                30 Juni 2019
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                <div class="paragraf">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Proin ac diam eget est rutrum ultrices. Donec laoreet enim a massa dapibus, cursus egestas dui
+                        pulvinar.
+                        Proin sit amet accumsan lectus. Nullam auctor auctor consequat. Donec semper magna erat,
+                        sed fringilla lacus pretium eget. Cras porttitor, nibh sit amet interdum bibendum, nibh velit
+                        accumsan tellus,
+                        vel vehicula tellus leo vitae ipsum. Praesent sit amet libero sed orci ullamcorper efficitur.
+                        Pellentesque in euismod purus, sit amet ultrices tortor. Vestibulum ante dui, tempor at dui id,
+                        tincidunt euismod diam.
+                        Integer pellentesque massa nibh, ac eleifend odio malesuada sed. Phasellus orci sem, cursus nec
+                        orci ut, accumsan facilisis
+                        lacus. Nullam at elementum nibh, ac gravida felis. In sagittis rhoncus nisi tempus dignissim.
+                        Sed fringilla consequat ante
+                        vitae lobortis. Cras posuere ligula vel enim suscipit malesuada. Vivamus non nulla ut ante
+                        imperdiet euismod quis nec massa.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="borrowing">
+                    Borrow
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- MODAL DISINI -->
+
+
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal" >
+        <div class="modal-dialog modal-lg" >
+            <div class="modal-content" style="border-radius: 15px;">
+                <div class="modal-body p-5">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 class="modal-title text-left" id="exampleModalLabel"><b>Edit Data</b></h4>
+                            <br><br/>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="form-group row">
+                            <label for="inputurl" class="col-sm-2 col-form-label">Url Image</label>
+                            <div class="col-sm-10">
+                                <input type="urlimage" class="form-control" id="inputurlimage" placeholder="https://www.gramedia.com/search?q=dilan">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputtitle" class="col-sm-2 col-form-label">Title</label>
+                            <div class="col-sm-10">
+                                <input type="title" class="form-control" id="inputtitles" placeholder="Dilan 1990">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputtextarea" class="col-sm-2 col-form-label">Description</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac diam eget est rutrum ultrices. Donec laoreet enim a massa dapibus, cursus egestas dui pulvinar."
+                                rows="3"></textarea>
+                            </div>
+                        </div>
+                        
+                    </form>
+                    <div class="row">
+                        <div class="col-12 text-right">
+                            <button type="button" class="btn btn-primary save-form">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.17/dist/sweetalert2.all.min.js"></script>
+
+<script>
+    $( document ).ready(function() {
+        $("#delete").click(function() {
+            Swal.fire({
+        title: 'Are you sure?',
+        text: "You won't be able to revert this!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire(
+            '',
+            'Data Dilan Berhasil DIhapus',
+            'success'
+            )
+        }
+        })
+        })
+    })
+</script>
+
+</html>

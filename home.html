@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Home</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/png" href="/assets/img/icon-5.png" />
+       
+        <link href="/assets/css/index.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar-->
+            <div class="border-end bg-white" id="sidebar-wrapper">
+                <div class="sidebar-heading">
+                    <!-- ini yg garis 3 itu buat toggler -->
+                    <span class="toggler-icon-sidebar" id="sidebarToggle" style="margin-left:170px"></span>
+                </div>
+                <div class="list-group list-group-flush">
+                <!-- ini isi sidebarnya -->
+                    <div class="profile-photo"style="text-align:center;">
+                        <img src="/assets/img/avatar-icon.png" alt="" style="margin-bottom: 15px; width:150px; height:150px">
+                    </div>
+                    <div class="profile-name" style="text-align:center;">
+                        <h4>Putri W</h4>
+                        <br><br/>
+                    </div>
+                    <div class="logout-btn" style="text-align:center;">
+                        <div type="button" class="btn1 btn-default btn-sm" >
+                            <span class="fa fa-sign-out"></span> Log out
+                        </div>
+                    </div>
+                    <div id="mySidenav" class="sideoption">
+                        <div class="explore">
+                            Explore
+                        </div>
+                        <div class="history">
+                            History
+                        </div>
+                        <div type="button" class="btn addbooks" data-toggle="modal" data-target="#myModal" style="font-size: 24px;">
+                            Add Books
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+                <!-- Top navigation-->
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <!-- ini navbar nya -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                            
+                            
+                            <ul class="navbar-nav text-left">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown">All Category</a>
+                                    <div class="dropdown-menu dropdown-menu-end">
+                                        <a class="dropdown-item" href="#!">All Category</a>
+                                        <a class="dropdown-item" href="#!">Fiction</a>
+                                        <a class="dropdown-item" href="#!">Non Fiction</a>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown">All Time</a>
+                                    <div class="dropdown-menu dropdown-menu-end">
+                                        <a class="dropdown-item" href="#!">All Time</a>
+                                        <a class="dropdown-item" href="#!">All Year</a>
+                                        <a class="dropdown-item" href="#!">All Month</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="navig-resp" style="display: inline-flex;width: 133vh;">
+                                <div class="search-bar" style="width:100%;display: inline-flex;padding: 10px;">
+                                    <i class="fa fa-search" style="padding: 10px;"></i>
+                                    <input type="search-bar" class="form-control" id="input-searchbar" placeholder="Search" style="width: 400px;">
+                                </div>
+                                <div class="icontitle text-right" style="display: inline-flex;">
+                                    <img src="/assets/img/bookshelf.png" alt="" style="margin-top: 3px;">
+                                    <h2 style="margin-top: 7px; margin-left: 5px">Library</h2>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </nav>
+                <!-- Page content-->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12 carousell">
+                            <!-- isi gridnya yang tengah -->
+                            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                                <div class="gallery-cell">
+                                    <img src="/assets/img/buku-3.png" alt="" style="width: 100%; height:100%">
+                                </div>
+                                <div class="gallery-cell">
+                                    <img src="/assets/img/laskar3.jpg" alt="" style="width: 100%; height:100%">
+                                </div>
+                                <div class="gallery-cell">
+                                    <img src="/assets/img/cover1.png" alt="" style="width: 100%; height:100%">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin-left: 100px;">
+                        <div class="card-title">
+                            <strong>List Book</strong>
+                        </div>
+                        <div class="col-md-4" style="margin:0;" >
+                            <div class="card" style="width:250px; height:40vh; border:none; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.13);">
+                                <img class="card-img-top" src="/assets/img/cover.png" alt="Card image" style="width:100%; height:20vh;">
+                                <div class="card-body" >
+                                  <h4 class="card-title">
+                                    <a href="deitails.html">Dilan 1990</a></h4>
+                                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis lacus mi, sit amet vehicula nisl consequat id. </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4" style="margin:0; ">
+                            <div class="card" style="width:250px; height:40vh; border:none; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.13);">
+                                
+                                <img class="card-img-top" src="/assets/img/buku-2.png" alt="Card image" style="width:100%; height:20vh;">
+                                <div class="card-body">
+                                  <h4 class="card-title" href="/deitails.html">Sebuah Seni Untuk ...</h4>
+                                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis lacus mi, sit amet vehicula nisl consequat id. </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4" style="margin:0px;">
+                            <div class="card" style="width:250px; height:40vh; border:none; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.13);">
+                                <img class="card-img-top" src="/assets/img/buku-1.png" alt="Card image" style="width:100%; height:20vh;">
+                                <div class="card-body">
+                                  <h4 class="card-title">React Native</h4>
+                                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis lacus mi, sit amet vehicula nisl consequat id. </p>
+                                </div>
+                            </div>
+                        </div>
+                            
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Modal -->
+    <div class="modal fade" id="myModal" >
+        <div class="modal-dialog modal-lg" >
+            <div class="modal-content" style="border-radius: 15px;">
+                <div class="modal-body p-5">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 class="modal-title text-left" id="exampleModalLabel"><b>Add Data</b></h4>
+                            <br><br/>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="form-group row">
+                            <label for="inputurl" class="col-sm-2 col-form-label">Url Image</label>
+                            <div class="col-sm-10">
+                                <input type="urlimage" class="form-control" id="inputurlimage" placeholder="https://www.gramedia.com/search?q=dilan">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputtitle" class="col-sm-2 col-form-label">Title</label>
+                            <div class="col-sm-10">
+                                <input type="title" class="form-control" id="inputtitles" placeholder="Dilan 1990">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputtextarea" class="col-sm-2 col-form-label">Description</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac diam eget est rutrum ultrices. Donec laoreet enim a massa dapibus, cursus egestas dui pulvinar."
+                                rows="3"></textarea>
+                            </div>
+                        </div>
+                        
+                    </form>
+                    <div class="row">
+                        <div class="col-12 text-right">
+                            <button type="button" class="btn btn-primary save-form" style="font-size: 20px;
+                            display: inline-block;
+                            background-color: #FBCC38;
+                            color: white;
+                            border: 0px;">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+     
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="/assets/js/index.js"></script>
+    </body>
+</html>

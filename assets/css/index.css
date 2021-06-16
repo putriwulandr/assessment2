@@ -1,0 +1,203 @@
+.toggler-icon-sidebar{
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-image: url(../../assets/img/menu.png);
+    margin-left: 192px !important;
+    font-size: 13px;
+}
+
+#wrapper {
+    overflow-x: hidden;
+    color: black !important;
+  }
+  
+  #sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -12rem;
+    transition: margin 0.25s ease-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.13);
+  }
+  
+  #sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1rem;
+  }
+  
+  #sidebar-wrapper .list-group {
+    width: 15rem;
+  }
+  
+  #page-content-wrapper {
+    min-width: 100vw;
+  }
+
+  
+.border-end {
+    border-right: 1px solid #dee2e6 !important;
+  }
+  
+  .border-end-0 {
+    border-right: 0 !important;
+  }
+  
+  body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+    margin-left: 0;
+    
+  }
+  /* @media (max-width: 992px) {
+    
+    .navig-resp{
+      width: 133vh !important;
+    }
+  } */
+  
+  @media (min-width: 768px) {
+    #sidebar-wrapper {
+      margin-left: 0;
+    }
+  
+    #page-content-wrapper {
+      min-width: 0;
+      width: 100%;
+    }
+  
+    body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+      margin-left: -12.5rem;
+    }
+
+  }
+
+  .navbar
+  {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.13); 
+    width:100vw;
+  }
+  .nav-item a{
+    color: black;
+  }
+  .nav-item a:hover
+  {
+    color: yellowgreen;
+  }
+
+  .icontitle img
+  {
+    max-width: 50px;
+    max-height: 50px;
+    float:right;
+  }
+
+  .navig-resp-2{
+    width: 166vh !important;
+    display: inline-flex;
+  }
+  
+  .carousell
+  {
+    height: 40vh;
+    padding-top: 25px;
+  }
+
+  .card-title /* tulisan list book*/ 
+  {
+    padding-bottom: 5px;
+    font-size: 20px;
+  }
+
+  .titlebar
+  {
+    margin-top: 5px;
+  }
+  
+  .sideoption
+  {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 25px;
+  }
+
+  .explore
+  {
+    margin-bottom: 15px;
+  }
+
+  .history
+  {
+    margin-bottom: 15px;
+  }
+
+  .add-books
+  {
+    margin-bottom: 15px;
+  }
+  
+  .gallery-cell {
+    width: 40%;
+    height: 200px;
+    margin-right: 10px;
+    counter-increment: gallery-cell;
+  }
+
+  .card-body h4
+  {
+    font-size: 18px;
+  }
+
+  .card-body p
+  {
+    font-size: 12px;
+  }
+
+.dilan
+{
+  background-image: url(/assets/img/buku-3.png);
+}
+
+.btn1
+{
+  width:90px;
+  margin-left: 75px;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 1px;
+  color: rgb(53, 53, 53);
+}
+
+.input-icons i {
+  position: absolute;
+}
+
+.input-icons {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.icon {
+  padding: 10px;
+  min-width: 40px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.button{
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  background-color: #FBCC38;
+  color: white;
+  border: 0px;
+  border-radius: 10px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
